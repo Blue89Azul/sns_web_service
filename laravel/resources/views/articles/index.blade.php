@@ -3,7 +3,8 @@
 @section('title', '記事一覧')
 
 @section('content')
-  <div class="container"> 
+  @include('nav')
+  <div class="container">
     @foreach($articles as $article)
     <div class="card mt-3">
       <div class="card-body d-flex flex-row">
