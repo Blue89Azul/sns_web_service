@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand navbar-dark blue-gradient">
-  <a class="navbar-bland" href="/"><i class="far fa-stickly-note mr-1">memo</i></a>
+  <a class="navbar-bland" href="/"><i class="far fa-stickly-note mr-1">Memo</i></a>
   <ul class="navbar-nav ml-auto">
     @guest
     <li class="nav-item">
@@ -8,7 +8,7 @@
     @endguest
     @guest
     <li class="nav-item">
-      <a class="nav-link" href="/">ログイン</a>
+      <a class="nav-link" href="{{ route('login') }}">ログイン</a>
     </li>
     @endguest
     @auth
