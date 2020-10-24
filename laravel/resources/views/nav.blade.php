@@ -13,7 +13,7 @@
     @endguest
     @auth
     <li class="nav-item">
-      <a class="nav-link" href="/"><i class="fas fa-pem mr-1">投稿する</i></a>
+      <a class="nav-link" href="{{ route('articles.create') }}"><i class="fas fa-pen mr-1">投稿する</i></a>
     </li>
     @endauth
     @auth
