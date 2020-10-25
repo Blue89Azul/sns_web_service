@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand navbar-dark blue-gradient">
-  <a class="navbar-bland" href="/"><i class="far fa-stickly-note mr-1">Memo</i></a>
+  <a class="navbar-bland" href="/"><i class="far fa-sticky-note mr-1">Memo</i></a>
   <ul class="navbar-nav ml-auto">
     @guest
     <li class="nav-item">

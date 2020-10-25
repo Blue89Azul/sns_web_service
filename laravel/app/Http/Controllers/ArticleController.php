@@ -21,9 +21,14 @@ class ArticleController extends Controller
 
     public function store(ArticleRequest $request, Article $article)
     {
-      $article->fill($request->all());
-      $article->user_id = $request->user()->id;
-      $article->save();
-      return redirect()->route('articles.index');
+        $article->fill($request->all());
+        $article->user_id = $request->user()->id;
+        $article->save();
+        return redirect()->route('articles.index');
+    }
+
+    public function edit(Article $article)
+    {
+      return view('articles.edit', ['article' => $article]);
     }
 }
