@@ -56,11 +56,11 @@ class PasswordResetNotification extends Notification
               'email' => $notifiable->email,
             ]),
             'count' => config(
-              'auth.password.'.
+              'auth.passwords.'.
               config('auth.defaults.passwords').
               '.expire'
             ),
-        ])
+        ]);
     }
 
     /**
